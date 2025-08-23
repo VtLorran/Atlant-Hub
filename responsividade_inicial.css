@@ -1,0 +1,153 @@
+.div-logo {
+    display: flex
+}
+
+.logo-responsive {
+    display: none;
+}   
+
+@media (max-width: 1200px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .div-user {
+        width: 15vw;
+    }
+
+    .div-pesquisar {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .topicos {
+        padding: 7px;
+        font-size: 2vh;
+    }
+
+    .div-user {
+        width: 20vw;
+    }
+
+    .div-pesquisar {
+        width: 70vw;
+    }
+
+    .input-pesquisar {
+        font-size: 1.8vh;
+    }
+
+    .button-pesquisar {
+        height: 4vh;
+        width: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+         display: none;
+     }
+
+     .logo-responsive {
+         display: block;
+         transform: translate(-2vw);
+     }
+
+     .div-logo {
+         width: 15vw;
+     }
+
+    .logo-responsive img {
+         height: 10vh;
+         margin-left: 2vh;
+         align-items: center;
+         justify-content: center;
+     }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .topicos {
+        font-size: 1.8vh;
+    }
+
+    .div-user {
+        width: 16vw;
+    }
+    .div-user svg {
+       height: 5vh;
+    }
+
+    .div-pesquisar {
+        width: 40vw;
+    }
+
+    .input-pesquisar {
+        font-size: 1.5vh;
+        padding: 10px;
+    }
+
+    .button-pesquisar {
+        height: 4vh;
+        width: 6vw;
+    }
+
+    .div-cabecalho {
+        margin-left: 0;
+    }
+
+    .button-pesquisar img {
+        height: 4vh;
+    }
+
+    .text-rodape h2 {
+        font-size: 2.5vh;
+    }
+
+    .div-user h2 {
+        display: none;
+    }
+
+    .div-user h1 {
+        font-size: 1.5vh;
+    } 
+
+    .br1 {
+        display: block;
+    }
+
+    .text-rodape p {
+        font-size: 1.2vh;
+    }
+
+    .carrinho img {
+        height: 4vh;
+    }
+
+    .contato-div h1 {
+        font-size: 2.5vh;
+    }
+
+    .contato-div p {
+        font-size: 1.2vh;
+    }
+    
+    .numero-carrinho {
+        width: 2.5vw;
+    }
+
+    .config img {
+        height: 4vh;
+    }
+
+    .rodape {
+        margin-top: 8vh;
+    }
+}
