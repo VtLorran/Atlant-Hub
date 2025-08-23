@@ -6,109 +6,55 @@
     display: none;
 }   
 
-@media (max-width: 1200px) {
-    .catalogo {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .div-user {
-        width: 15vw;
-    }
-
-    .div-pesquisar {
-        width: 50vw;
-    }
-}
-
 @media (max-width: 768px) {
-    .catalogo {
-        grid-template-columns: repeat(2, 1fr);
+
+    header {
+        width: 100%;
+        max-width: 768px;
+        box-sizing: border-box; 
     }
 
-    .topicos {
-        padding: 7px;
-        font-size: 2vh;
+    .div-logo svg {
+        display: none;
+    }
+
+    .div-logo {
+        width: 11vw;
+    }
+
+
+    .logo-responsive {
+        display: block;
+        height: 100%;
+        width: 10vh;
+    }
+
+    .logo-responsive img {
+        height: 10vh;
+        align-items: center;
+    }
+    
+    .div-pesquisar {
+        width: 35vw;
+        margin-left: 7vw;
+    }
+
+    .button-pesquisar {
+        width: 7.5vw;
+    }
+
+    .div-cabecalho {
+        margin-left: 2vw;
     }
 
     .div-user {
         width: 20vw;
     }
 
-    .div-pesquisar {
-        width: 70vw;
-    }
-
-    .input-pesquisar {
-        font-size: 1.8vh;
-    }
-
-    .button-pesquisar {
-        height: 4vh;
-        width: 6vw;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .logo {
-         display: none;
-     }
-
-     .logo-responsive {
-         display: block;
-         transform: translate(-2vw);
-     }
-
-     .div-logo {
-         width: 15vw;
-     }
-
-    .logo-responsive img {
-         height: 10vh;
-         margin-left: 2vh;
-         align-items: center;
-         justify-content: center;
-     }
-
-    .catalogo {
-        grid-template-columns: 1fr;
-    }
-
-    .topicos {
-        font-size: 1.8vh;
-    }
-
-    .div-user {
-        width: 16vw;
-    }
-    .div-user svg {
-       height: 5vh;
-    }
-
-    .div-pesquisar {
-        width: 40vw;
-    }
-
-    .input-pesquisar {
-        font-size: 1.5vh;
-        padding: 10px;
-    }
-
-    .button-pesquisar {
-        height: 4vh;
-        width: 6vw;
-    }
-
-    .div-cabecalho {
-        margin-left: 0;
-    }
-
-    .button-pesquisar img {
-        height: 4vh;
-    }
-
-    .text-rodape h2 {
-        font-size: 2.5vh;
+    .user-svg {
+        height: 06vh;
+        width: 06vw;
+        position: absolute;
     }
 
     .div-user h2 {
@@ -117,37 +63,214 @@
 
     .div-user h1 {
         font-size: 1.5vh;
-    } 
+        transform: translate(6vw);
+    }
 
     .br1 {
         display: block;
     }
 
-    .text-rodape p {
-        font-size: 1.2vh;
+    .oculto {
+        display: none;
+    }
+
+    .div-user:hover h1 {
+        transform: translate(6vw);
+    }
+
+    .div-user:hover svg {
+        transform: none;
+        filter: none;
     }
 
     .carrinho img {
-        height: 4vh;
+        height: 4.5vh;
+    }
+
+    .carrinho {
+       transform: translate(-3vw);
+    }
+
+    .numero-carrinho {
+        width: 2vw;
+    }
+
+    .config {
+        transform: translate(-2vw);
+    }
+
+    .config img {
+        height: 4.5vh;
+    }
+
+    .text-rodape h2 {
+        font-size: 2.5vh;
+    }
+
+    .text-rodape p {
+        font-size: 1.5vh;
+    }
+
+    .rodape {
+        margin-top: 4vh;
+        transform: none;
+    }
+
+    .guaribas {
+        height: 13vh;
+    }
+
+    .insta {
+        height: 5vh;
+        transform: translate(4vw);
+    }
+
+    .contato-div {
+        transform: translateX(4vw);
     }
 
     .contato-div h1 {
         font-size: 2.5vh;
+        margin-bottom: 2vh;
     }
 
     .contato-div p {
         font-size: 1.2vh;
     }
+
+
+}
+@media (max-width: 481px) {
+
+    header {
+        width: 100%;
+        max-width: 768px;
+        box-sizing: border-box; 
+    }
+
+    .div-logo svg {
+        display: none;
+    }
+
+    .div-logo {
+        width: 11vw;
+    }
+
+
+    .logo-responsive {
+        display: block;
+        height: 100%;
+        width: 10vh;
+    }
+
+    .logo-responsive img {
+        height: 10vh;
+        align-items: center;
+    }
     
+    .div-pesquisar {
+        width: 35vw;
+        margin-left: 7vw;
+    }
+
+    .button-pesquisar {
+        width: 7.5vw;
+    }
+
+    .div-cabecalho {
+        margin-left: 2vw;
+    }
+
+    .div-user {
+        width: 20vw;
+    }
+
+    .user-svg {
+        height: 06vh;
+        width: 06vw;
+        position: absolute;
+    }
+
+    .div-user h2 {
+        display: none;
+    }
+
+    .div-user h1 {
+        font-size: 1.5vh;
+        transform: translate(6vw);
+    }
+
+    .br1 {
+        display: block;
+    }
+
+    .oculto {
+        display: none;
+    }
+
+    .div-user:hover h1 {
+        transform: translate(6vw);
+    }
+
+    .div-user:hover svg {
+        transform: none;
+        filter: none;
+    }
+
+    .carrinho img {
+        height: 4.5vh;
+    }
+
+    .carrinho {
+       transform: translate(-3vw);
+    }
+
     .numero-carrinho {
-        width: 2.5vw;
+        width: 2vw;
+    }
+
+    .config {
+        transform: translate(-2vw);
     }
 
     .config img {
-        height: 4vh;
+        height: 4.5vh;
+    }
+
+    .text-rodape h2 {
+        font-size: 2.5vh;
+    }
+
+    .text-rodape p {
+        font-size: 1.5vh;
     }
 
     .rodape {
-        margin-top: 8vh;
+        margin-top: 4vh;
+        transform: none;
     }
+
+    .guaribas {
+        height: 13vh;
+    }
+
+    .insta {
+        height: 5vh;
+        transform: translate(4vw);
+    }
+
+    .contato-div {
+        transform: translateX(4vw);
+    }
+
+    .contato-div h1 {
+        font-size: 2.5vh;
+        margin-bottom: 2vh;
+    }
+
+    .contato-div p {
+        font-size: 1.2vh;
+    }
+
+
 }

@@ -25,6 +25,8 @@ header {
     z-index: 999;
 }
 
+
+
 header::before {
     content: "";
     position: absolute;
@@ -32,7 +34,7 @@ header::before {
     bottom: 0;
     width: 200%;
     left: -100%;
-    background: linear-gradient(to right, transparent, black, #051233, #0d2a69);
+    background: linear-gradient(to right, transparent, black, #051233, #0d2a69 );
     animation: entrada 10s linear forwards infinite;
     pointer-events: none;
     z-index: 0;
@@ -43,7 +45,7 @@ header::before {
         left: -100%;
     }
     to {
-        left: 100%;
+        left: 100%
     }
 }
 
@@ -58,27 +60,27 @@ header::before {
 }
 
 .div-logo {
-    width: 20vw;
-    align-items: center;
-    height: 10vh;
+ width: 20vw;
+ align-items: center;
+height: 10vh;
 }
 
 .div-pesquisar {
-    display: flex;
-    width: 40vw;
-    position: relative;
-    align-items: center;
-    margin-left: 5vw;
-    min-width: 30vw;
+   display: flex;
+   width: 40vw;
+   position: relative;
+   align-items: center;
+   margin-left: 5vw;
 }
 
 .input-pesquisar {
     width: 100%;
+    height: 0.1vh;
     border-radius: 50px;
     outline: white;
-    border: 2px solid white;
+    border: 2px solid white ;
     background: transparent;
-    padding: 15px;
+    padding: 20px;
     font-size: 2vh;
     transition: all 0.3s ease;
     color: white;
@@ -103,7 +105,6 @@ header::before {
     top: 50%;
     transform: translateY(-50%);
     background-color: #e9e9e9;
-    min-width: 3vw;
 }
 
 .button-pesquisar:hover {
@@ -117,7 +118,6 @@ header::before {
 
 .button-pesquisar img {
     height: 4.5vh;
-    min-width: 4vh;
 }
 
 .div-cabecalho {
@@ -134,13 +134,11 @@ header::before {
 }
 
 .div-user svg {
-    height: 6vh;
+    height: 06vh;
     margin-bottom: 0.2vh;
     fill: white;
     transition: transform 0.3s ease;
     cursor: pointer;
-    min-width: 4vh;
-    width: 3vw;
 }
 
 .div-user svg,
@@ -156,8 +154,7 @@ header::before {
     filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.5));
 }
 
-.div-user h1,
-.div-user h2 {
+.div-user h1, h2 {
     font-size: 2vh;
     color: white;
     margin-bottom: 1px;
@@ -175,6 +172,7 @@ header::before {
 .carrinho {
     display: flex;
     align-items: center;
+    
 }
 
 .carrinho img {
@@ -189,7 +187,7 @@ header::before {
     transform: translateY(-3px);
 }
 
-.numero-carrinho {
+.numero-carrinho { 
     background: white;
     border-radius: 10px;
     width: 1vw;
@@ -198,6 +196,7 @@ header::before {
     transform: translate(-0.7vw, -1.7vh);
     transition: transform 0.3s ease;
 }
+
 
 .config {
     display: flex;
@@ -221,16 +220,16 @@ header::before {
     margin-left: 3vw;
     margin-right: 3vw;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 15px;
     flex-wrap: nowrap;
 }
 
 .topicos {
     margin-top: 2vh;
-    background: rgba(183, 183, 183, 0.184);
+    background: rgba(183, 183, 183, 0.184); 
     border-radius: 20px;
-    border: solid rgba(183, 183, 183, 0.416) 1px;
+    border: solid rgba(183, 183, 183, 0.416) 1px ;
     text-align: center;
     padding: 12px;
     font-size: 2.4vh;
@@ -239,10 +238,13 @@ header::before {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease, box-shadow 0.2  ease, background 0.3 ease;
     cursor: pointer;
     flex: 1;
     z-index: 2;
 }
+
+
 
 .topicos:hover {
     transform: translateY(-4px);
@@ -261,12 +263,21 @@ header::before {
     margin-left: 3vw;
     margin-right: 3vw;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 15px;
     flex-wrap: nowrap;
     margin-top: 5vh;
 }
 
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .topicos {
+        padding: 07px;   
+    }
+}
 
 .conteudo-catalogo {
     background: white;
@@ -299,8 +310,9 @@ footer {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;  
     flex-direction: column;
+
 }
 
 .text-rodape h2 {
@@ -327,6 +339,7 @@ footer {
     margin-top: 2vh;
     margin-bottom: 2vh;
     transform: translate(2.7vw);
+
 }
 
 .contato-div {
@@ -343,6 +356,7 @@ footer {
 .contato-div h1 {
     font-size: 3vh;
     transform: translateY(-0.5vh);
+    
 }
 
 .conteudo-extra {
@@ -381,9 +395,8 @@ footer {
     width: 100%;
     position: relative;
     bottom: 6vh;
-    height: 5vh;
-    font-size: 1.5vh;
-}
+    height: 05vh;
+    font-size: 1.5vh;}
 
 u {
     opacity: 0.8;
