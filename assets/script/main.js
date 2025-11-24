@@ -1,28 +1,3 @@
-
-/*
-    Algoritmo - O que vamos fazer?
-    1) Colocar os produtos na tela:
-        [x] Saber quem são os produtos
-        [x] Onde colocar os produtos
-        [x] Colocar os produtos na tela
-        [x] Estilizar os produtos
-    2) Filtrar por categoria
-        [x] Quem são os botões para selecionar a categoria 
-        [x] Quando um dos botões ali foram clicados 
-        [x] Qual botão foi clicado 
-        [x] Filtrar os produtos daquela categoria
-        [x] Mostrar na tela, somente os produtos filtrados 
-        3) Filtrar por nome   
-        [x] Quando digitou algo no input 
-        [x] O que foi digitado
-        [x] Filtrar os produtos de acordo com o que foi digitado 
-        [x] Deixar só os produtos filtrados na tela 
-    html -> document
-    css -> style 
-    js -> script
-    querySelector -> selecionar algo
-    */
-
 let produtos = [
   {
     id: 1,
@@ -127,20 +102,11 @@ function mostrarProdutos() {
 
   let htmlProdutos = ""; 
 
-
-  //Pegar item por item do meu array
-  //Assim posso decidir o que fazer com cada um
-  //prd -> produtos
-
   produtos.forEach((prd) => {
 
 
-    //includes -> verifica se dois textos "batem"
-    //toLocaleLowerCase() -> compara tudo em minúsculo 
     if(prd.nome.toLocaleLowerCase().includes(textoInput)){
 
-
-      // === -> Comparando dois valores
       if(prd.categoria === categoria || categoria === "todos") {
   
     htmlProdutos = htmlProdutos + `
@@ -167,7 +133,6 @@ function pesquisar() {
   mostrarProdutos();
 }
 
-//CURIOSO, FOFOQUEIRO = ADDEVENTLISTENER (OUVINTE DE EVENTOS)
 
 inputPesquisa.addEventListener("input", pesquisar);
 
@@ -175,14 +140,11 @@ todosBotoes.forEach(botao => {
 
     botao.addEventListener("click", function(){
 
-      //getAttribute -> permite que eu pegue o valor do data-category
       categoria = botao.getAttribute("data-categoria")
 
-      //RETIRAR DE TODOS A CLASSE "ATIVO"
 
       todosBotoes.forEach(b => b.classList.remove("ativo"))
 
-      //COLOCAR SOMENTE EM QUEM EU CLICO NO BOTAO 
       botao.classList.add("ativo")
 
 

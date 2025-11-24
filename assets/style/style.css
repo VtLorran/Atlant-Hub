@@ -26,15 +26,15 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--white-3);
-  line-height: 1.6; /* define tamanho da linha  */
+  line-height: 1.6; 
 }
 
 header {
   background-color: var(--white-2);
   padding: 16px 32px;
   display: flex;
-  justify-content: space-around; /* ALinhamento na horizontal  */ /* Around cria um espaçamento na horizontal*/
-  align-items: center; /* Alinhamento na vertical */
+  justify-content: space-around; 
+  align-items: center; 
 }
 
 .leme-atlant {
@@ -56,7 +56,7 @@ header {
 
 .pesquisar-div {
   width: 100%;
-  max-width: 500px; /* largura máxima do container  */
+  max-width: 500px; 
   margin: 0 32px;
   display: flex;
   align-items: center;
@@ -102,8 +102,10 @@ header {
   border-radius: 24px;
   color: var(--white-3);
   background: none;
-  padding: 12px 24px;
+  padding: 12px 0px;
   cursor: pointer;
+  width: 14rem;
+  justify-content: center;
 }
 
 .botao-categorias:hover {
