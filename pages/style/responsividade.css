@@ -26,4 +26,30 @@
   .row {
     width: 20rem;
   }
+
+  .options-div {
+    width: 10rem;
+  }
+
+  .containers-geral {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+
+  .secao-direita {
+    display: flex !important;
+    justify-content: center !important;
+    width: 40rem !important;
+  }
+
+  .secao-esquerda {
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: 2rem;
+  }
+
+  .secao-pedidos {
+    width: 100% !important; 
+  }
 }
